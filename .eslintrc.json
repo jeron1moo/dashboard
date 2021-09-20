@@ -23,7 +23,7 @@
     "rules": {
         "react/jsx-filename-extension": 0,
         "no-param-reassign": 0,
-        "react/prop-types": 1,
+        "react/prop-types": 0,
         "react/require-default-props": 0,
         "react/no-array-index-key": 0,
         "react/jsx-props-no-spreading": 0,
@@ -46,7 +46,8 @@
                 "singleQuote": true,
                 "trailingComma": "none",
                 "tabWidth": 2,
-                "useTabs": false
+                "useTabs": false,
+                "endOfLine": "auto"
             }
         ]
     }
