@@ -1,8 +1,8 @@
 import { Skeleton } from '@mui/material';
 import React from 'react';
 
-const ImagePlaceholder = ({ ...rest }) => (
+const SkeletonImagePlaceholder = ({ ...rest }) => (
   <Skeleton variant="rect" {...rest} animation="wave" />
 );
 
-export default ImagePlaceholder;
+export default SkeletonImagePlaceholder;

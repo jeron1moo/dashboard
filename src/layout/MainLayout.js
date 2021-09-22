@@ -1,9 +1,5 @@
 import { Box, Button } from '@mui/material';
 import React from 'react';
-import { Link } from 'react-router-dom';
-import EarningCard from '../components/cards/skeleton/EarningCard';
-import ImagePlaceholder from '../components/cards/skeleton/ImagePlaceholder';
-import PopularCard from '../components/cards/skeleton/PopularCard';
 import DashboardDefault from '../views/dashboard/Default';
 import useStyles from './styles';
 
@@ -21,18 +17,6 @@ export default () => {
         asd
       </Button>
       <DashboardDefault />
-
-      <Button
-        component={Link}
-        to="/users/"
-        color="secondary"
-        variant="contained"
-      >
-        To users
-      </Button>
-      <EarningCard />
-      <ImagePlaceholder />
-      <PopularCard />
     </Box>
   );
 };

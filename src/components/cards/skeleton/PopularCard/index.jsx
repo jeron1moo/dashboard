@@ -3,7 +3,7 @@ import React from 'react';
 import { gridSpacing } from '../../../../store/redux/constants/theme';
 import useStyles from './styles';
 
-const PopularCard = () => {
+const SkeletonPopularCard = () => {
   const classes = useStyles();
   return (
     <Card>
@@ -172,4 +172,4 @@ const PopularCard = () => {
   );
 };
 
-export default PopularCard;
+export default SkeletonPopularCard;

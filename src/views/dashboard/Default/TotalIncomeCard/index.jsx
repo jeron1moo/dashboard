@@ -10,7 +10,7 @@ import {
 import React from 'react';
 import useStyles from './styles';
 
-const SkeletonTotalIncomeCard = () => {
+const AuthFooter = () => {
   const classes = useStyles();
   return (
     <Card>
@@ -36,4 +36,4 @@ const SkeletonTotalIncomeCard = () => {
   );
 };
 
-export default SkeletonTotalIncomeCard;
+export default AuthFooter;

@@ -2,7 +2,7 @@ import { Card, CardContent, Grid, Skeleton } from '@mui/material';
 import React from 'react';
 import { gridSpacing } from '../../../../store/redux/constants/theme';
 
-const AuthFooter = () => (
+const SkeletonTotalGrowthBarChart = () => (
   <Card>
     <CardContent>
       <Grid container spacing={gridSpacing}>
@@ -36,4 +36,4 @@ const AuthFooter = () => (
   </Card>
 );
 
-export default AuthFooter;
+export default SkeletonTotalGrowthBarChart;

@@ -2,7 +2,7 @@ import { Card, CardContent, Grid, Skeleton } from '@mui/material';
 import React from 'react';
 import useStyles from './styles';
 
-const EarningCard = () => {
+const SkeletonEarningCard = () => {
   const classes = useStyles();
   return (
     <Card>
@@ -36,4 +36,4 @@ const EarningCard = () => {
   );
 };
 
-export default EarningCard;
+export default SkeletonEarningCard;
