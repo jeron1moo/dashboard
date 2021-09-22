@@ -1,12 +1,16 @@
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import EarningCard from '../components/cards/skeleton/EarningCard';
+import ImagePlaceholder from '../components/cards/skeleton/ImagePlaceholder';
+import PopularCard from '../components/cards/skeleton/PopularCard';
+import DashboardDefault from '../views/dashboard/Default';
 import useStyles from './styles';
 
 export default () => {
   const classes = useStyles();
   return (
     <Box>
-      <Button className={classes.root}>asd</Button>
       <Button size="small" variant="contained">
         asd
       </Button>
@@ -16,10 +20,19 @@ export default () => {
       <Button size="medium" variant="outlined" color="inherit">
         asd
       </Button>
-      <Button variant="text" color="inherit">
-        asd
+      <DashboardDefault />
+
+      <Button
+        component={Link}
+        to="/users/"
+        color="secondary"
+        variant="contained"
+      >
+        To users
       </Button>
-      <Typography variant="h1">sdf</Typography>
+      <EarningCard />
+      <ImagePlaceholder />
+      <PopularCard />
     </Box>
   );
 };
