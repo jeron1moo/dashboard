@@ -2,16 +2,20 @@ import { makeStyles } from '@mui/styles';
 
 export default makeStyles((theme) => ({
   card: {
-    backgroundColor: theme.palette.secondary.dark,
+    backgroundColor: theme.palette.primary.dark,
     color: '#fff',
     overflow: 'hidden',
     position: 'relative',
+    '&>div': {
+      position: 'relative',
+      zIndex: 5
+    },
     '&:after': {
       content: '""',
       position: 'absolute',
       width: '210px',
       height: '210px',
-      background: theme.palette.secondary[800],
+      background: theme.palette.primary[800],
       borderRadius: '50%',
       top: '-85px',
       right: '-95px',
@@ -25,11 +29,12 @@ export default makeStyles((theme) => ({
       position: 'absolute',
       width: '210px',
       height: '210px',
-      background: theme.palette.secondary[800],
+      background: theme.palette.primary[800],
       borderRadius: '50%',
       top: '-125px',
       right: '-15px',
       opacity: 0.5,
+      zIndex: 1,
       [theme.breakpoints.down('mobile')]: {
         top: '-155px',
         right: '-70px'
@@ -42,15 +47,15 @@ export default makeStyles((theme) => ({
   avatar: {
     ...theme.typography.commonAvatar,
     ...theme.typography.largeAvatar,
-    backgroundColor: theme.palette.secondary[800],
-    marginTop: '8px'
+    backgroundColor: theme.palette.primary[800],
+    marginTop: '8px',
+    color: '#fff'
   },
   avatarRight: {
     ...theme.typography.commonAvatar,
     ...theme.typography.mediumAvatar,
-    backgroundColor: theme.palette.secondary.dark,
-    color: theme.palette.secondary[200],
-    zIndex: 1
+    backgroundColor: theme.palette.primary.dark,
+    color: '#fff'
   },
   cardHeading: {
     fontSize: '2.125rem',
@@ -62,13 +67,13 @@ export default makeStyles((theme) => ({
   subHeading: {
     fontSize: '1rem',
     fontWeight: 500,
-    color: theme.palette.secondary[200]
+    color: theme.palette.primary[200]
   },
   avatarCircle: {
     cursor: 'pointer',
-    backgroundColor: theme.palette.secondary[200],
+    backgroundColor: theme.palette.primary[200],
     ...theme.typography.smallAvatar,
-    color: theme.palette.secondary.dark
+    color: theme.palette.primary.dark
   },
   circleIcon: {
     transform: 'rotate3d(1, 1, 1, 45deg)'

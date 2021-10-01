@@ -16,7 +16,7 @@ export default (theme) => ({
       },
       input: {
         fontWeight: 500,
-        background: theme.colors.grey[50],
+        background: theme.palette.grey[50],
         padding: '15.5px 14px',
         borderRadius: `${theme.shape.borderRadius}px`,
         '&.MuiInputBase-inputSizeSmall': {

@@ -6,7 +6,7 @@ export default (theme) => ({
     },
     styleOverrides: {
       root: {
-        color: theme.colors.textDark,
+        color: theme.palette.textDark,
         padding: '24px'
       },
       title: {
