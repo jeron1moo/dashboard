@@ -28,6 +28,7 @@ export default ({ children }) => {
   theme.components = copmonentsOverride(theme);
   theme.typography = { ...theme.typography, ...createTypography(theme) };
 
+  console.log('%cindex.jsx line:31 theme', 'color: #007acc;', theme);
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
